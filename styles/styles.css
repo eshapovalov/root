@@ -1,73 +1,130 @@
 /*Basic styles*/
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 400;
-    color: #000000;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
 
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
+
 /*Main settings*/
 .main {
-    width: 300px;
-    margin: 0 auto;
+  width: 300px;
+  margin: 0 auto;
 }
 
-.about,
-.fun-facts,
-.video,
-.learned {
-    text-align: justify;
+.images {
+  border-radius: 20px;
+  padding: 10px;
+  padding-top: 0;
+  animation: fade 5s linear forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.title {
+  font-size: x-large;
+}
+
+.nav {
+  padding: 10px;
+}
+
+.nav-contents {
+  display: flex;
+  gap: 3%;
+  color: beige;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #3f87cc;
+  align-items: center;
+}
+
+.nav-contents a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-contents a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  text-align: right;
+}
+
+.logo-image {
+  border-radius: 50%;
+}
+
+.about-me {
+  display: flex;
 }
 
 .learned {
-    padding-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .video frame {
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
 }
 
 /*Footer settings*/
 .links {
-    display: flex;
+  display: flex;
 
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .links li {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
 .links li:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .connect {
-    padding-top: 20px;
+  padding-top: 20px;
+}
+
+.fun-facts {
+  font-size: 15px;
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    background: rgb(175,122,197);
-    background: linear-gradient(360deg, rgba(175,122,197,1) 20%, rgba(255,255,255,1) 100%);
+  background: rgb(175, 122, 197);
+  background: linear-gradient(
+    360deg,
+    rgba(175, 122, 197, 1) 20%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 /*Top button*/
 .top {
-    position: fixed;
-    bottom: 5px;
-    left: 75%;
-    z-index: 1;
-    left: calc(50% + 105px);
+  position: fixed;
+  bottom: 5px;
+  left: 75%;
+  z-index: 1;
+  left: calc(50% + 105px);
 }
-
-
