@@ -128,3 +128,12 @@ footer {
   z-index: 1;
   left: calc(50% + 105px);
 }
+
+.cloudImage {
+  float: right;
+}
+.mydog {
+  float: right;
+  height: 450px; 
+  width: auto;
+}
